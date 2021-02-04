@@ -37,3 +37,58 @@ if(playerInput == '3'){
 }
 
 printMessage('Twój ruch to: ' + playerMove);
+
+// GRA
+if( computerMove == 'kamień' && playerMove == 'papier'){
+  printMessage('Ty wygrywasz!');
+}
+
+if(computerMove == 'papier' && playerMove == 'nożyce'){
+	printMessage('Ty wygrywasz!');
+}
+
+if(computerMove == 'nożyce' && playerMove == 'kamień'){
+	printMessage('Ty wygrywasz!');
+}
+
+// REMIS
+if( computerMove == 'kamień' && playerMove == 'kamień'){
+  printMessage('Remis!');
+}
+
+if( computerMove == 'papier' && playerMove == 'papier'){
+  printMessage('Remis!');
+}
+
+if( computerMove == 'nożyce' && playerMove == 'nożyce'){
+  printMessage('Remis!');
+}
+// INNA LICZBA
+if ( playerMove == 'nieznany ruch') {
+	printMessage('Wpisz inną liczbę');
+}
+// INNY ZAPIS
+
+if( computerMove == 'kamień' && playerMove == 'papier'){
+  printMessage('Ty wygrywasz!');
+} else if ( computerMove == 'kamień' && playerMove == 'kamień'){
+	printMessage('Remis!');
+} else ( playerMove == 'nieznany ruch') {
+	printMessage('Wpisz inną liczbę');
+}
+
+if( computerMove == 'papier' && playerMove == 'nożyce'){
+  printMessage('Ty wygrywasz!');
+} else if ( computerMove == 'papier' && playerMove == 'papier'){
+	printMessage('Remis!');
+} else ( playerMove == 'nieznany ruch') {
+	printMessage('Wpisz inną liczbę');
+}
+
+if( computerMove == 'nożyce' && playerMove == 'kamień'){
+  printMessage('Ty wygrywasz!');
+} else if ( computerMove == 'nożyce' && playerMove == 'nożyce'){
+	printMessage('Remis!');
+} else ( playerMove == 'nieznany ruch') {
+	printMessage('Wpisz inną liczbę');
+}
