@@ -10,6 +10,7 @@ function playGame(playerInput) {
   let playerMove = getMoveName(playerInput);
   displayResult(playerMove, computerMove);
 }
+
 // FirstButton
 function button1Clicked(){
   playGame(1);
@@ -18,6 +19,7 @@ function button1Clicked(){
 let rockButton = document.getElementById('rock');
 
 rockButton.addEventListener('click', button1Clicked);
+
 //SecondButton
 function button2Clicked(){
   playGame(2);;
@@ -26,6 +28,7 @@ function button2Clicked(){
 let paperButton = document.getElementById('paper');
 
 paperButton.addEventListener('click', button2Clicked);
+
 //ThirdButton
 function button3Clicked(){
   playGame(3);;
