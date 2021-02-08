@@ -11,32 +11,32 @@ function clearMessages() {
 function getMoveName(argMoveId) {
   console.log('wywołano funkcję getMoveName z argumentem: ' + argMoveId);
   if (argMoveId == 1) {
-  return 'kamień';
+  return 'ROCK';
   } else if (argMoveId == 2) {
-  return 'papier';
+  return 'PAPER';
   } else if (argMoveId == 3) {
-  return 'nożyce';
+  return 'SCISSORS';
   } else {
-		printMessage ('zła liczba')
+		printMessage ('WRONG NUMBER')
 	}
 }
 
 function displayResult(argComputerMove, argPlayerMove) {
 	console.log('wywołano funkcję displayResult z argumentem: ' + argComputerMove + argPlayerMove);
-		printMessage('Ja gram ' + argComputerMove + ', Komputer gra ' + argPlayerMove);
-	if ( argComputerMove == 'kamień' && argPlayerMove == 'papier') {
-		printMessage('Komputer wygrywa!');
-	} else if ( argComputerMove == 'papier' && argPlayerMove == 'nożyce') {
-		printMessage('Komputer wygrywa!');
-	} else if ( argComputerMove == 'nożyce' && argPlayerMove == 'kamień') {
-		printMessage('Komputer wygrywa!');
-	} else if ( argComputerMove == 'nożyce' && argPlayerMove == 'kamień') {
-		printMessage('Komputer wygrywa!');
-	} else if ( argComputerMove == 'kamień' && argPlayerMove == 'papier') {
-		printMessage('Komputer wygrywa!');
+		printMessage('I CHOICE ' + argComputerMove + ' , COMPUTER CHOICE ' + argPlayerMove);
+	if ( argComputerMove == 'ROCK' && argPlayerMove == 'PAPER') {
+		printMessage('COMPUTER WIN!');
+	} else if ( argComputerMove == 'PAPER' && argPlayerMove == 'SCISSORS') {
+		printMessage('COMPUTER WIN!');
+	} else if ( argComputerMove == 'SCISSORS' && argPlayerMove == 'ROCK') {
+		printMessage('COMPUTER WIN!');
+	} else if ( argComputerMove == 'SCISSORS' && argPlayerMove == 'ROCK') {
+		printMessage('COMPUTER WIN!');
+	} else if ( argComputerMove == 'SCISSORS' && argPlayerMove == 'PAPER') {
+		printMessage('COMPUTER WIN!');
 	} else if ( argComputerMove === argPlayerMove) {
-		printMessage('Remis!');
+		printMessage('REMIS!')
 	} else {
-	printMessage ('Ja wygrywam!')
+	printMessage ('I WIN!')
 	}
 }
