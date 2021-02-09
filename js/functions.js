@@ -1,14 +1,14 @@
-function printMessage(msg) {
-	let div = document.createElement('div');
+const printMessage = function (msg) {
+	const div = document.createElement('div');
 	div.innerHTML = msg;
 	document.getElementById('messages').appendChild(div);
 }
 
-function clearMessages() {
+const clearMessages = function () {
 	document.getElementById('messages').innerHTML = '';
 }
 
-function getMoveName(argMoveId) {
+const getMoveName = function (argMoveId) {
   console.log('wywołano funkcję getMoveName z argumentem: ' + argMoveId);
   if (argMoveId == 1) {
   return 'ROCK';
@@ -21,7 +21,7 @@ function getMoveName(argMoveId) {
 	}
 }
 
-function displayResult(argComputerMove, argPlayerMove) {
+const displayResult = function (argComputerMove, argPlayerMove) {
 	console.log('wywołano funkcję displayResult z argumentem: ' + argComputerMove + argPlayerMove);
 		printMessage('I CHOICE ' + argComputerMove + ' , COMPUTER CHOICE ' + argPlayerMove);
 	if ( argComputerMove == 'ROCK' && argPlayerMove == 'PAPER') {
