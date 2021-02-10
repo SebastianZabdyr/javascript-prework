@@ -28,7 +28,7 @@ const rockButton = document.getElementById('rock');
       paperButton = document.getElementById('paper');
       scissorsButton = document.getElementById('scissors');
 
-rockButton.addEventListener('click', button1Clicked);
-paperButton.addEventListener('click', button2Clicked);
-scissorsButton.addEventListener('click', button3Clicked);
+const rockButton.addEventListener('click', button1Clicked);
+      paperButton.addEventListener('click', button2Clicked);
+      scissorsButton.addEventListener('click', button3Clicked);
 }
