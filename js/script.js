@@ -25,10 +25,10 @@ const button1Clicked = function (){
 }
 
 const rockButton = document.getElementById('rock');
-      paperButton = document.getElementById('paper');
-      scissorsButton = document.getElementById('scissors');
+const paperButton = document.getElementById('paper');
+const scissorsButton = document.getElementById('scissors');
 
-const rockButton.addEventListener('click', button1Clicked);
-      paperButton.addEventListener('click', button2Clicked);
-      scissorsButton.addEventListener('click', button3Clicked);
+rockButton.addEventListener('click', button1Clicked);
+paperButton.addEventListener('click', button2Clicked);
+scissorsButton.addEventListener('click', button3Clicked);
 }
